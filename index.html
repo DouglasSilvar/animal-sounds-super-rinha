@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+<meta charset="utf-8" />
+<title>Animal Sounds – Super Rinha</title>
+<h1>Animal Sounds – Super Rinha</h1>
+<p>Arquivos MP3 estáticos para o jogo.</p>
+<ul id="list"></ul>
+<script>
+(async () => {
+  const m = await (await fetch('./manifest.json')).json();
+  const ul = document.getElementById('list');
+  Object.entries(m.files).forEach(([key, file]) => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = m.baseUrl + file;
+    a.textContent = `${key} → ${file}`;
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+})();
+</script>
+</html>

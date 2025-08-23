@@ -1,0 +1,17 @@
+{
+  "baseUrl": "./sounds/",
+  "files": {
+    "cachorro": "cachorro.mp3",
+    "gato": "gato.mp3",
+    "tamandua": "tamandua.mp3",
+    "preguica": "preguica.mp3",
+    "gorila": "gorila.mp3",
+    "canguru": "canguru.mp3",
+    "lobo": "lobo.mp3",
+    "urso": "urso.mp3",
+    "rinoceronte": "rinoceronte.mp3",
+    "elefante": "elefante.mp3",
+    "tigre": "tigre.mp3",
+    "leao": "leao.mp3"
+  }
+}
